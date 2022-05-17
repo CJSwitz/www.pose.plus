@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Damion&family=Nunito:wght@700&display=block');
+
+// Colours
+$cPri: #97005b;
+$cBackground: #f0eaed;
+
+// Eases
+$eFastOutSlowIn: cubic-bezier(0.4, 0.0, 0.2, 1);
+
+// Font Mixins
+@mixin fontHeader {
+  font-family: "Fredoka One";
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin fontRegular {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin fontLabel {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin fontCursive {
+  font-family: "Damion";
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Base Rules
+body,
+html {
+  @include fontRegular;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  @include fontHeader;
+  font-size: 4rem;
+  color: $cPri;
+}

@@ -1,0 +1,61 @@
+---
+title: Pose Plus | Gesture Drawing App
+layout: default
+
+latest_version: '1.0.0'
+latest_date: '2022 May 17'
+urlbase: 'https://github.com/CJSwitz/pose-plus/releases/latest/download/PosePlus-'
+---
+
+<div class="hero">
+  <img src="res/IconLogo.svg" alt="Pose Plus Logo" />
+</div>
+
+<h1 class="lead__title">Pose Plus</h1>
+
+<p class="lead__blurb">
+  Pose Plus is a <em class="emphasis">free</em> open source app for gesture drawing.
+  Make the most out of your image references with advanced features like auto zoom, collections, and much more!
+</p>
+
+<section class="latest">
+  <h2 class="latest__title">Get the Latest Version</h2>
+  <div class="latest__version">Version {{page.latest_version}}</div>
+  <div class="latest__date">{{page.latest_date}}</div>
+  <div class="latest__cont">
+    <div class="latest__os">
+      <h3 >Windows</h3>
+      <div class="latest__archcont">
+        <div class="latest__arch">
+          <h4>x64</h4>
+          <div class="latest__linkcont">
+            <a href="{{page.urlbase}}{{page.latest_version}}-win-x64.exe">Exe</a>
+            <a href="{{page.urlbase}}{{page.latest_version}}-win-x64.zip">Zip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="latest__sep"></div>
+    <div class="latest__os">
+      <h3 >macOS</h3>
+      <div class="latest__archcont">
+        <div class="latest__arch">
+          <h4 >Apple Silicon</h4>
+          <div class="latest__linkcont">
+            <a href="{{page.urlbase}}{{page.latest_version}}-macOS-arm64.dmg">Dmg</a>
+            <a href="{{page.urlbase}}{{page.latest_version}}-macOS-arm64.zip">Zip</a>
+          </div>
+        </div>
+        <div class="latest__arch">
+          <h4 >x64</h4>
+          <div class="latest__linkcont">
+            <a href="{{page.urlbase}}{{page.latest_version}}-macOS-x64.dmg">Dmg</a>
+            <a href="{{page.urlbase}}{{page.latest_version}}-macOS-x64.zip">Zip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>Looking for an older version? Check our <a href="https://github.com/CJSwitz/pose-plus/releases">GitHub
+      releases page</a>.</footer>
+</section>

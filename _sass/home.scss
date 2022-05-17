@@ -1,0 +1,129 @@
+.hero {
+  width: 8rem;
+  height: 8rem;
+  background-color: $cPri;
+
+
+  border-radius: 33%;
+  display: flex;
+  padding: 1rem;
+
+  & > svg {
+    fill: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+}
+
+.lead {
+  &__title {
+    @include fontCursive;
+    font-size: 8rem;
+    color: $cPri;
+    margin: 0;
+  }
+
+  &__blurb {
+    text-align: center;
+    margin: 0;
+    font-size: 1.25rem;
+    max-width: 48rem;
+  }
+}
+
+.emphasis {
+  color: $cPri;
+  font-weight: bold;
+  font-style: normal;
+  background-color: unset;
+}
+
+.wip {
+  @include fontHeader;
+  color: $cPri;
+  font-size: 2rem;
+  margin: 1rem 0;
+
+  &__blurb {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}
+
+.latest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__title {
+    @include fontHeader;
+    color: $cPri;
+    font-size: 2.5rem;
+    margin-bottom: 0.125rem;
+  }
+
+
+  &__version {
+    
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    font-weight: 800;
+  }
+
+  &__date {
+    font-size: 1rem;
+  }
+
+  &__cont {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__sep {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 75%;
+    margin: auto 1rem;
+  }
+
+
+
+  &__os {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & h3{
+      margin: 0;
+      font-size: 1.125rem;
+    }
+  }
+
+  &__archcont {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__arch{
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    & h4 {
+      @include fontLabel;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0 0 0.25rem;
+    }
+  }
+
+  &__linkcont a{
+    margin: 0rem 0.5rem;
+  }
+}

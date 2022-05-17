@@ -1,0 +1,81 @@
+$max-content-width: 71.25rem;
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.nav {
+  background-color: $cPri;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
+
+  &__item {
+    margin: 0 1rem;
+  }
+
+  &__link {
+    @extend .nav__item;
+    @include fontLabel;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 100ms $eFastOutSlowIn;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.footer {
+  $textCol: rgba(255, 255, 255, 0.66);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: $textCol;
+
+  min-height: 2rem;
+  display: flex;
+
+  &__text {
+    margin: auto 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    & a {
+      color: $textCol;
+    }
+  }
+}
+
+.content {
+  flex-grow: 1;
+  max-width: $max-content-width;
+  // width: 100%;
+  // box-sizing: border-box;
+  margin: auto;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fillEmpty {
+  flex: 1 1 0;
+}
